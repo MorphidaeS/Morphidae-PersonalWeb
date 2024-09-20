@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+
+
+
+/*主页头部导航*/
+nav{
+    /*展示位置固定*/
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1540px;
+    height: 70px;
+    top:0px;
+    background-color: rgb(123, 161, 197) ;
+    
+    /*溢出,没搞懂*/
+    overflow: hidden;
+    font-size: 20px;
+    color:rgb(234, 247, 255) ;
+    
+    /*不透明度*/
+    opacity: 0.8;
+
+    z-index: 1000;
+}
+
+
+/*扩充,结果为：使右侧传送栏目向右侧靠拢*/
+nav .navtitle{
+    padding-right: 50px;
+    width: 30%;
+}
+
+nav a{
+    display: block;/*区块展示*/
+    justify-content: center;
+    text-decoration: none;/*导航字体链接去除下划线*/
+    
+
+}

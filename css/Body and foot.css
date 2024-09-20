@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*背景*/
+body{
+    margin: 0;
+    padding: 0;
+    
+    background-image: url("../image/页面背景2\ \(1\).jpg");    /*放图片*/
+   /* background-image: url("../image/主页背景1.jpeg"); */   /*放图片*/
+   /* background-image:url("../image/主页背景2.jpg");*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+/*页脚*/
+.foot{
+    margin-top: 0px;
+    width: 100vw;
+    height: 100px;
+    float:left;
+    clear:both;
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: rgba(84, 132, 161, 0.8);
+
+}
+
+.foot p{
+    line-height: 30px;
+    font-size: 2em;
+    color:rgb(28, 43, 43);
+}
+

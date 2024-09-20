@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*字体设置10px*/
+html{
+    font-size: 10px;
+    
+}
+
+
+
+.title_Img{
+    background-image: url("../image/主页背景1.jpeg");    /*放图片*/
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 1540px;
+    background-attachment: fixed;
+    width: 100vw;
+    transition: 0.5s ease 0s;
+    animation: load 0.5s;
+}
+
+.title_Img .title{
+    width: 1540px;
+    padding: 200px;
+    font-size: 100px;
+    font-weight: bolder;
+    color:#f6f6f6;
+}
+
+.main{
+   
+    /*快速定位吸附框图 */
+   /*   scroll-snap-type:y mandatory;   */
+   
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+/*底部扩展空间*/
+/*重设高度拉长空间*/
+.sec{
+    height:  100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+.ax{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 250px;
+    
+    /*横向排版*/
+    float:left;
+
+    margin: 150px 100px 0px 125px;/*第一个参数表示距上边界*//*第四个参数表示距离左边界*/
+
+    background: rgba(219,235,241,0.8);
+    box-shadow:  0 0 15px rgb(59,73,95);
+    border-radius: 15px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: all 0.5s ease 0s;
+}
+
+/*盘旋，暂不*/
+
+.ax .hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.img1{
+    overflow: hidden;
+}
+
+.div1 .img{
+    background-image: url("../image/3\ \(1\).jpeg");
+}
+.div2 .img{
+    background-image: url("../image/3\ \(2\).jpeg");
+}
+.div3 .img{
+    background-image: url("../image/3.jpg");
+}
+
+
+.ax .img{
+    height: 190px;
+    width: 250px;
+   background-size: cover;
+   background-position: 0px -30px;
+   transition: all 0.5s ease 0s;
+   opacity: 0.8;
+}
+
+
+
+.ax .img:hover{
+    transform: scale(1.1);
+}
+
+
+.ax .text{
+    height: 310px;
+    display: flex;
+    width: 200px;
+    overflow: hidden;
+    flex-direction: column;
+    margin-top: auto;
+    
+}
+
+.ax .text h1{
+    margin-top: 9px;
+    text-align: center;
+    font-size: 3em;
+    color: rgb(28, 44, 68);
+    height: 30px;
+    line-height: 30px;
+}
+
+.ax .text p{
+    margin-top: 5px;
+    margin-left: 19px;
+    font-size: 2em;
+    word-wrap: break-word;
+    color: rgb(114, 182, 202);
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*字体设置10px*/
+html{
+    font-size: 10px;
+    
+}
+
+.main{
+   
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*底部扩展空间*/
+/*重设高度拉长空间*/
+
+
+.About_us{
+    width: 1200px;
+    height: 650px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-image: url("../image/浙理工夜景.jpg");    /*放图片*/
+    background-repeat: no-repeat;
+    background-size: 1300px;
+    overflow: hidden;
+    opacity: 0.9;
+    border-radius: 50px;
+    animation: loadbac 1s linear;
+    transition: 1s ease 0.2s;
+}
+
+.About_us .left{
+    width: 400px;
+    height: 100%;
+}
+
+.About_us .left .square{
+    width: 250px;
+    height: 250px;
+    border: 9px solid  white;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 50%;
+    animation: a1 3s infinite linear;
+}
+
+
+.left .tit{
+    position: absolute;
+    font-size: 3em;
+    margin-left: 130px;
+    margin-top: -170px;
+    color: white;
+    z-index: -10;
+}
+
+
+
+.About_us .right{
+    width: 800px;
+    height: 100%;
+}
+.About_us .about{
+    color: white;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.About_us .about h1{
+    margin-top: 50px;
+    margin-left: 70px;
+    font-size: 5em;
+    font-weight: bolder;
+    line-height: 200px;
+}
+
+.About_us .about p{
+    font-size: 2em;
+    font-weight: bolder;
+    line-height: 50px;
+    
+}
+.links{
+    width: 500px;
+    height: 100px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.links .icon{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.4s ease 0s;
+}
+.links .icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.links .qq{
+    background-image: url("../image/qq.png");
+    background-size: 25px;
+}
+
+.links .phone{
+    background-image: url("../image/phone.jpg");
+   
+}
+.links .college{
+    background-image: url("../image/校徽标志.jpeg");
+    background-size: 40px;
+}
+
+.icon ul{
+    display: none;
+    list-style: none;
+    margin-top: 30px;
+    width: 150px;
+    margin-left: -20px;
+    color: rgb(110, 217, 244);
+    font-size: 20px;
+}
+.icon:hover ul{
+    display: block;
+    position: absolute;
+}
